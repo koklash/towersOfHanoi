@@ -10,12 +10,12 @@ public class TowersOfHanoi {
         }
     }
 
-    public int getMinDiscMovesCount(int discs , char origin, char destination, char free){
+    public int getMinDiscMovesCount(int discs){
         if(discs==1){
             return 1;
         }
         else{
-            return 1 + getMinDiscMovesCount(discs-1, origin, free,destination) + getMinDiscMovesCount(discs-1, free, destination,origin);
+            return 1 + getMinDiscMovesCount(discs-1) + getMinDiscMovesCount(discs-1);
         }
     }
 }
