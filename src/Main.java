@@ -4,6 +4,6 @@ public class Main {
 
         TowersOfHanoi hanoi= new TowersOfHanoi();
         hanoi.solveTheTowerProblem(3, 'A', 'C', 'B');
-        System.out.println(hanoi.getMinDiscMovesCount(3, 'A', 'C', 'B'));
+        System.out.println(hanoi.getMinDiscMovesCount(20));
     }
 }
